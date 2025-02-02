@@ -1,0 +1,72 @@
+
+Valentine's Day Website Code
+This code creates a beautiful webpage with 100 poems, decorated with pink hearts.
+
+1. Create an index.html file:
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Poems for My Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>100 Poems for My Love, Ronron ❤️</h1>
+        <p>Happy Valentine's Day, my love! Every poem here is just for you.</p>
+        <div id="poem-list"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+2. Create a styles.css file:
+css
+Copy
+Edit
+body {
+    background-color: #ffe6f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #d63384;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    color: #ff4d79;
+}
+
+p {
+    font-size: 18px;
+}
+
+.poem {
+    background: #fff0f5;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heart decorations */
+body::before {
+    content: "❤️ 💕 💖 💘 💞 💗 💓 💌";
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
